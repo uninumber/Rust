@@ -3,7 +3,6 @@ pub struct Something {
     average: f32,
 }
 
-
 impl Something {
 
     fn add(&mut self, x: u32) {

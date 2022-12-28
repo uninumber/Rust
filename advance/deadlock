@@ -1,0 +1,30 @@
+Deadlock is the process in which severeal objects(functions) wait for each other.
+
+A deadlock situation on a resource can occur only when 4 processes occurs simultaneously:
+
+1. Mutex. Mutual exclusion: at least one reasource must be held in non-shareable mode. that is, only one process at a time 
+can use the resource. otherwise, processes will be not prevented from using the resource when necessery. Only one process
+can use the process an any give instance of time.
+
+2. hold and wait or resource holding: a process is curently holding at least one resource and requesting
+additional resources which being holded by other processes.
+
+3. No preemption: a resource can be released voluntary by the process holding it.
+
+4. Circular wait. The saim is third. Which means that process holding resource which is needed for other
+process, but other process holding resource which is need for other. it's like 
+{P1, P2,.., P(n)} where P1 waits for P2, P2 for P(n) and P(n) for P1
+
+Most current operating systems cannot prevent deadlocks.
+
+Approaches for preventing them: 
+
+Ignoring Deadlock. This approach assume that there are no possibilities for deadlock to occur. It's computed mostly by algorithms.
+Was used in MINIX and UNIX operating systems.
+
+
+Detection: 
+After deadlock detected process can be terminated which can be hightly costed, cause computation also prevented;
+Resource preemtion: resources allocated to various processes can be preemted and allocated to other processes until the deadlock broken;
+
+
