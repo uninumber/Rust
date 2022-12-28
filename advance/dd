@@ -1,0 +1,9 @@
+Rustonomicon. Ownership.
+
+std::io::Error;
+
+BufReader and such things.
+
+
+Return Result directly from main() is almost certaintly not what you want in CLI tools
+because it will show the Debug representation of error, not the Display representation
