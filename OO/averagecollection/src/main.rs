@@ -1,3 +1,6 @@
+
+/* This is basically just structure */
+
 pub struct Something {
     list: Vec<u32>,
     average: f32,

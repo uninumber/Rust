@@ -3,6 +3,7 @@ trait ComputerParts {
 }
 
 struct Cpu;
+
 struct Gpu;
 
 impl ComputerParts for Cpu {
@@ -18,16 +19,11 @@ impl ComputerParts for Gpu {
 }
 
 fn main() {
-
-
     let mut l: Vec<Box<dyn ComputerParts>> = Vec::new();
-
     l.push(Box::new(Cpu));
     l.push(Box::new(Gpu));
-
     for i in l {
         i.stream()
     }
 }
-
 
