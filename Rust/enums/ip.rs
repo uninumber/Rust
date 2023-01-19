@@ -7,7 +7,7 @@ fn main()
         V8,
 
     }
-    
+
     struct IpAddr 
     {
         kind:IpAddrKind,

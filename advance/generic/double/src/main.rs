@@ -1,8 +1,9 @@
-fn double<const T: i32> ()  {
+fn triple<const T: i32> ()  {
     println!("doubled: {}", T * 2)
 }
 
 fn main() {
-    double::<9>();
+    triple::<9>();
 }
 
+//what's up
