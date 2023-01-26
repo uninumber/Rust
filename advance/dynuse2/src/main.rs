@@ -2,6 +2,10 @@ trait ComputerParts {
     fn stream(&self) {}
 }
 
+  /* 
+      * This is basically structs 
+  */
+
 struct Cpu;
 
 struct Gpu;
@@ -22,6 +26,7 @@ fn main() {
     let mut l: Vec<Box<dyn ComputerParts>> = Vec::new();
     l.push(Box::new(Cpu));
     l.push(Box::new(Gpu));
+    l.pop();
     for i in l {
         i.stream()
     }

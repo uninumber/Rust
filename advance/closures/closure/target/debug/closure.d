@@ -1,1 +1,1 @@
-/home/nomikat/low/rust/advance/closures/closure/target/debug/closure: /home/nomikat/low/rust/advance/closures/closure/src/main.rs
+/home/qmont/level/rust/Rust/advance/closures/closure/target/debug/closure: /home/qmont/level/rust/Rust/advance/closures/closure/src/main.rs

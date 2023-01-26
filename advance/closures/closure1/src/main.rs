@@ -4,7 +4,7 @@ fn main() {
 
     let _c = || {
 
-        let y = c[0];
+        let _ = c[0];
         c[0] += 1;
         println!("{:?}", c[0]);
     };

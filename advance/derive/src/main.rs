@@ -8,7 +8,6 @@ struct Foo<T> {
 fn main() {
 }
 
-
 // - the generated implementation for PartialEq is equal to: 
 // - impl<T: PartialEq> PartialEq for Foo {
 // - fn equal(&self, other: &Foo<T>) {
