@@ -5,7 +5,6 @@ trait Animal {
 struct  Herbivore;
 struct  Carnivore;
 
-
 impl Animal for Herbivore {
     fn eat(&self) {
         println!("I eat plants.");
