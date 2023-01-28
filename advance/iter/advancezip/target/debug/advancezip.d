@@ -1,1 +1,1 @@
-/home/nomikat/low/rust/advance/iter/advancezip/target/debug/advancezip: /home/nomikat/low/rust/advance/iter/advancezip/src/main.rs
+/home/qmont/level/rust/Rust/advance/iter/advancezip/target/debug/advancezip: /home/qmont/level/rust/Rust/advance/iter/advancezip/src/main.rs
