@@ -13,25 +13,24 @@
 //     }
 // }
 
-
 #[derive(Debug)]
 struct Stuff<'a, T: 'a> {
     x: &'a T
 }
 
 trait Something { 
-    fn new(&self) -> &T;
+    fn new(&self);
 }
 
-impl<'a, T> Something for Stuff<'a, T> {
-    fn new(&self) -> &T {
-         &self.x 
+impl<'a, T: std::fmt::Display> Something for Stuff<'a, T> {
+    fn new(&self) {
+         println!("The value is : {0}", self.x)
     }
 }
 
 fn main()  {
 
-    let some = Stuff {x: &5};
+    let some = Stuff {x: &6};
     println!("{:?}", some.new());
 
 }
