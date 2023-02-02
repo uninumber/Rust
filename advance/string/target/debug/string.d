@@ -1,1 +1,1 @@
-/home/nomikat/low/rust/advance/string/target/debug/string: /home/nomikat/low/rust/advance/string/src/main.rs
+/home/qmont/level/rust/Rust/advance/string/target/debug/string: /home/qmont/level/rust/Rust/advance/string/src/main.rs

@@ -14,6 +14,12 @@ where
     x();
 }
 
+fn warrup<T>(x: T) 
+    where T: FnOnce() -> String {
+        println!("Consuming variable: {}", x());
+        println!("Delicious...")
+    }
+
 fn main() {
     five_times(|s| -> () { println!("warrup: {}", s) });
     five_times(|something| println!("warrup: {}", something));
@@ -26,4 +32,8 @@ fn main() {
     }
 
     println!("{}", x);
+
+    let some = String::from("something cool");
+    let consume_and_return = move || some;
+    warrup(consume_and_return);
 }
