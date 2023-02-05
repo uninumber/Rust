@@ -14,12 +14,12 @@ struct Second<T> {
     y: T,
 }
 
-impl <T: Sub<Output = T>>Sub for Second<T> {
+impl<T: Sub<Output = T>> Sub for Second<T> {
     type Output = Self;
     fn sub(self, other: Self) -> Self {
-        Self  {
+        Self {
             x: self.x - other.x,
-            y: self.y - other.y
+            y: self.y - other.y,
         }
     }
 }
@@ -36,7 +36,6 @@ impl <T: Sub<Output = T>>Sub for Second<T> {
 // }
 
 fn main() {
-
     // fn really_add<T: Add<Output = T>>(x: T, y: T) ->  T {
     //     x + y
     // }
@@ -45,8 +44,8 @@ fn main() {
         x - y
     }
 
-    let num = Second {x: 12.4, y: 14.7};
-    let floats = num.sub(Second {x: 12.4, y: 14.7});
+    let num = Second { x: 12.4, y: 14.7 };
+    let floats = num.sub(Second { x: 12.4, y: 14.7 });
     println!("{:?}", floats);
 
     // let some = Point {x: 5.0, y: 7.4};
@@ -56,7 +55,7 @@ fn main() {
     let ints = some.add(4);
 
     // println!("{:?}", floats);
-    
+
     println!("{}", ints);
     println!("{}", really_sub(1.1, 2.44));
 
