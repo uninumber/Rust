@@ -8,10 +8,7 @@ fn is_big(x: i32) -> bool {
 
 
 fn main() {
-
-    let n = 15;
     let n = 10;
-    let 
 
     println!("this is first constant: {}", SOMETHING);
     println!("this is n: {}", n);

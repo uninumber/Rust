@@ -1,0 +1,4 @@
+here I am
+I am really fascinated about Rust programming language
+And rigth know I really want to understand how to 
+ipmlement utility "uniq" in Rust language
