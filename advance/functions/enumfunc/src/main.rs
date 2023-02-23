@@ -8,21 +8,32 @@ mod my_module {
     use super::Command;
 
     pub fn transformer(input: Vec<(String, Command)>) -> Vec<String> {
-        let mut output: Vec<String> = vec![];
-        for (mut string, command) in input.into_iter() {
-            match command {
+        input.into_iter()
+            .map(|(mut string, command)| match command {
                 Command::Append(x) => {
-                    for _ in 0..x {
-                        string += "bar";
-                        println!("{:?}", output);
-                    }
-                    output.push(string.clone())
-                } 
-                Command::Uppercase => output.push(string.to_uppercase()),
-                Command::Trim => output.push(string.trim().to_string())
-            }
-        }
-        output
+                    string.reserve("bar".len() * x);
+                    string.extend(std::iter::repeat("bar").take(x));
+                    string
+                },
+                Command::Uppercase => string.to_uppercase(),
+                Command::Trim => string.trim().to_string()
+                })
+        .collect()
+
+        // let mut output: Vec<String> = vec![];
+        // for (mut string, command) in input.into_iter() {
+        //     match command {
+        //         Command::Append(x) => {
+        //             for _ in 0..x {
+        //                 string += "bar";
+        //                 println!("{:?}", output);
+        //             }
+        //             output.push(string)
+        //         } 
+        //         Command::Uppercase => output.push(string.to_uppercase()),
+        //         Command::Trim => output.push(string.trim().to_string())
+        //     }
+        // }
     }
 }
 
