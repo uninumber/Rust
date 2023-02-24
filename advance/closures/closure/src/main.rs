@@ -7,6 +7,7 @@ where
     }
 }
 
+
 fn watsup<T>(mut x: T)
 where
     T: FnMut(),
