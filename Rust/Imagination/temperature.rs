@@ -12,7 +12,10 @@ fn main() {
 
   let converted_temp: f64 = (input_temp - 32.0) * 5.0/9.0;
   let converted_temf: f64 = (input_temp * 9.0)/5.0 + 32.0;
-
   println!("{} degrees fahrenheit is {} degrees celsius.", input_temp, converted_temp);
   println!("{} degrees celsius is {} degrees fahrenheit.", input_temp, converted_temf);
 }
+
+
+// That's up ther
+//
